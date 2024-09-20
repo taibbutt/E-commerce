@@ -23,19 +23,20 @@ const WishlistPage = () => {
             <table className="w-full divide-y divide-gray-200 table-fixed">
               <thead>
                 <tr>
-                  <th className="w-1/3 px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="w-[170px] md:w-1/3 px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     Product
                   </th>
-                  <th className="table-cell px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="w-[150px] md:w-1/4 table-cell px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     Price
                   </th>
-                  <th className="w-1/4 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="w-[150px] md:w-1/4 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     Stock Status
                   </th>
-                  <th className="w-1/6 px-4 py-3"></th>
+                  <th className="w-[150px] md:w-1/6 px-4 py-3"></th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
+
                 {/* Row 1 */}
                 <tr className="text-sm sm:text-lg">
                   <td className="px-4 sm:px-6 py-4 whitespace-nowrap">
