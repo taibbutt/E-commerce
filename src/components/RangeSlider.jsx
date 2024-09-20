@@ -16,11 +16,11 @@ export default function RangeSlider({ min = 0, max = 500, initialValue = 250 }) 
         min={min}
         max={max}
         value={value}
-        onInput={handleInput}
+        onChange={handleInput}
         id="priceRange"
         className="w-full h-2 rounded-lg appearance-none cursor-pointer focus:outline-none"
         style={{
-          background: `linear-gradient(to right, #10b981 ${((value - min) / (max - min)) * 100}%, #d1d5db ${((value - min) / (max - min)) * 100}%)`
+          background: `linear-gradient(to right, #00B207 ${((value - min) / (max - min)) * 100}%, #00B207 ${((value - min) / (max - min)) * 100}%)`
         }}
       />
     </div>

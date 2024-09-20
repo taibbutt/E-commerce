@@ -1,5 +1,6 @@
 "use client";
 
+import BreadCrum from "@/components/BreadCrum";
 import FilterBar from "@/components/FilterBar";
 import Pagination from "@/components/Pagination";
 import ProductsCard from "@/components/ProductsCard";
@@ -93,7 +94,9 @@ export default function Home() {
         <main class="w-full md:w-[75%] h-full mt-2 md:mt-0">
           <div class="flex justify-between items-center mb-3 px-3 h-[45px]">
             <div class="flex gap-2 items-center">
-              <p class="text-[#808080] text-[14px] hidden md:block">Sort By :</p>
+              <p class="text-[#808080] text-[14px] hidden md:block">
+                Sort By :
+              </p>
               <select class="px-[17px] text-[14px] rounded  border border-gray-400 bg-transparent h-[41px] w-[170px] outline-none pl-1">
                 <option>latest</option>
               </select>
@@ -119,8 +122,8 @@ export default function Home() {
 
       <div className="flex justify-center items-center my-10">
         <Pagination
-          totalPages={21} 
-          currentPage={3} 
+          totalPages={21}
+          currentPage={3}
           onPageChange={(page) => console.log("Go to page", page)}
         />
       </div>

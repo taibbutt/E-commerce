@@ -49,3 +49,8 @@ body{
   background-color: #10b981; /* Tailwind green-500 */
   cursor: pointer;
 }
+
+#overflow::-webkit-scrollbar{
+  visibility: none;
+  display: none;
+}
