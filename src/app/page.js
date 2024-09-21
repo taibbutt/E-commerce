@@ -86,31 +86,31 @@ export default function Home() {
 
   return (
     <>
-      <section class="flex md:flex-row flex-col my-6">
+      <section className="flex md:flex-row flex-col my-6">
         {/* <!-- Sidebar --> */}
 
         <FilterBar />
 
-        <main class="w-full md:w-[75%] h-full mt-2 md:mt-0">
-          <div class="flex justify-between items-center mb-3 px-3 h-[45px]">
-            <div class="flex gap-2 items-center">
-              <p class="text-[#808080] text-[14px] hidden md:block">
+        <main className="w-full md:w-[75%] h-full mt-2 md:mt-0">
+          <div className="flex justify-between items-center mb-3 px-3 h-[45px]">
+            <div className="flex gap-2 items-center">
+              <p className="text-[#808080] text-[14px] hidden md:block">
                 Sort By :
               </p>
-              <select class="px-[17px] text-[14px] rounded  border border-gray-400 bg-transparent h-[41px] w-[170px] outline-none pl-1">
+              <select className="px-[17px] text-[14px] rounded  border border-gray-400 bg-transparent h-[41px] w-[170px] outline-none pl-1">
                 <option>latest</option>
               </select>
             </div>
 
-            <div class="flex gap-2">
-              <p class="font-bold text-sm md:text-base">52</p>
-              <p class="text-gray-500 text-sm md:text-base">Results Found</p>
+            <div className="flex gap-2">
+              <p className="font-bold text-sm md:text-base">52</p>
+              <p className="text-gray-500 text-sm md:text-base">Results Found</p>
             </div>
           </div>
 
           {/* <!-- Products --> */}
 
-          <section class=" flex justify-center items-center gap-5 flex-wrap md:ml-7 mt-5 ">
+          <section className=" flex justify-center items-center gap-5 flex-wrap md:ml-7 mt-5 ">
             {/* <!-- Cards --> */}
 
             {products.map((item, index) => [
@@ -120,7 +120,7 @@ export default function Home() {
         </main>
       </section>
 
-      <div className="flex justify-center items-center my-10">
+      <div classNameName="flex justify-center items-center my-10">
         <Pagination
           totalPages={21}
           currentPage={3}

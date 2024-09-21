@@ -2,8 +2,12 @@ import BreadCrum from "@/components/BreadCrum";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faTwitter,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 const WishlistPage = () => {
   return (
@@ -34,16 +38,18 @@ const WishlistPage = () => {
                   <th className="w-[150px] md:w-1/4 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     Stock Status
                   </th>
-                  <th className="w-[150px] md:w-1/6 px-4 py-3"></th>
+                  <th className="w-[150px] md:w-1/4 px-4 py-3"></th>
+                  <th className="w-[150px] px-4 py-3"></th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
-
                 {/* Row 1 */}
                 <tr className="text-sm sm:text-lg">
                   <td className="px-4 sm:px-6 py-4 whitespace-nowrap">
                     <div className="flex items-center">
-                      <img
+                      <Image
+                        width={200}
+                        height={200}
                         className="h-10 w-10 rounded-full"
                         src="/mirch.png"
                         alt="Mirchi"
@@ -71,10 +77,14 @@ const WishlistPage = () => {
                       Add to Cart
                     </button>
                   </td>
+
                   <td className="px-4 py-4 text-right text-sm font-medium">
-                    <Image src={"/close.png"}
-                      id="change"
-                      width={15} height={15} alt="close" />
+                  <Image
+                      src={"/close.png"}
+                      width={15}
+                      height={15}
+                      alt="close"
+                    />
                   </td>
                 </tr>
 
@@ -82,7 +92,9 @@ const WishlistPage = () => {
                 <tr className="text-sm sm:text-lg">
                   <td className="px-4 sm:px-6 py-4 whitespace-nowrap">
                     <div className="flex items-center">
-                      <img
+                      <Image
+                        width={200}
+                        height={200}
                         className="h-10 w-10 rounded-full"
                         src="/culi.png"
                         alt="Culi"
@@ -108,9 +120,12 @@ const WishlistPage = () => {
                     </button>
                   </td>
                   <td className="px-4 py-4 text-right text-sm font-medium">
-                    <Image src={"/close.png"}
-                      id="change"
-                      width={15} height={15} alt="close" />
+                    <Image
+                      src={"/close.png"}
+                      width={15}
+                      height={15}
+                      alt="close"
+                    />
                   </td>
                 </tr>
 
@@ -118,7 +133,9 @@ const WishlistPage = () => {
                 <tr className="text-sm sm:text-lg">
                   <td className="px-4 sm:px-6 py-4 whitespace-nowrap">
                     <div className="flex items-center">
-                      <img
+                      <Image
+                        width={200}
+                        height={200}
                         className="h-10 w-10 rounded-full"
                         src="/japani.png"
                         alt="Japani"
@@ -147,7 +164,12 @@ const WishlistPage = () => {
                     </button>
                   </td>
                   <td className="px-4 py-4 text-right text-sm font-medium">
-                    <Image id="change" src={"/close.png"} width={15} height={15} alt="close" />
+                    <Image
+                      src={"/close.png"}
+                      width={15}
+                      height={15}
+                      alt="close"
+                    />
                   </td>
                 </tr>
 
@@ -155,21 +177,28 @@ const WishlistPage = () => {
                 <tr className="text-sm sm:text-lg">
                   <td className="py-8  whitespace-nowrap">
                     <div className="flex">
-                    <div className="text-sm">
-                      <p className="px-4 sm:px-6 mt-1">Share:</p>
-                    </div>
-                    <div className="flex space-x-4 px-4 sm:px-1">
+                      <div className="text-sm">
+                        <p className="px-4 sm:px-6 mt-1">Share:</p>
+                      </div>
+                      <div className="flex space-x-4 px-4 sm:px-1">
+                        <FontAwesomeIcon
+                          icon={faFacebook}
+                          size="2"
+                          className="text-green-500 bg-white  w-6"
+                        />
 
-                      <FontAwesomeIcon
-                        icon={faFacebook}
-                        size="2"
-                        className="text-green-500 bg-white  w-6"
-                      />
+                        <FontAwesomeIcon
+                          icon={faTwitter}
+                          size="2"
+                          className=" bg-white text-black w-6"
+                        />
 
-                      <FontAwesomeIcon icon={faTwitter} size="2" className=" bg-white text-black w-6" />
-
-                      <FontAwesomeIcon icon={faLinkedin} size="2" className="text-black w-6" />
-                    </div>
+                        <FontAwesomeIcon
+                          icon={faLinkedin}
+                          size="2"
+                          className="text-black w-6"
+                        />
+                      </div>
                     </div>
                   </td>
                 </tr>
