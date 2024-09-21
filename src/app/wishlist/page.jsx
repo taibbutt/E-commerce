@@ -39,7 +39,7 @@ const WishlistPage = () => {
                     Stock Status
                   </th>
                   <th className="w-[150px] lg:w-1/4 px-4 py-3"></th>
-                  <th className="w-[150px] px-4 py-3"></th>
+                  <th className="w-[50px] px-4 py-3"></th>
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
