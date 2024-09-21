@@ -24,9 +24,9 @@ const WishlistPage = () => {
 
           <div
             id="overflow"
-            className="shadow overflow-auto border-b border-gray-200 sm:rounded-lg"
+            className="flex justify-end   overflow-auto border-b sm:rounded-lg"
           >
-            <table className="w-[96%] divide-y divide-gray-200 table-fixed">
+            <table className="w-[98%] border shadow divide-y border-gray-200  divide-gray-200 table-fixed">
               <thead>
                 <tr>
                   <th className="w-[170px] md:w-1/3 px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
