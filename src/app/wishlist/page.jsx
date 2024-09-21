@@ -2,11 +2,13 @@ import BreadCrum from "@/components/BreadCrum";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faTwitter, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const WishlistPage = () => {
   return (
     <>
-     <Navbar/>
+      <Navbar />
 
       <BreadCrum />
 
@@ -20,7 +22,7 @@ const WishlistPage = () => {
             id="overflow"
             className="shadow overflow-auto border-b border-gray-200 sm:rounded-lg"
           >
-            <table className="w-full divide-y divide-gray-200 table-fixed">
+            <table className="w-[96%] divide-y divide-gray-200 table-fixed">
               <thead>
                 <tr>
                   <th className="w-[170px] md:w-1/3 px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -70,7 +72,9 @@ const WishlistPage = () => {
                     </button>
                   </td>
                   <td className="px-4 py-4 text-right text-sm font-medium">
-                   <Image src={"/close.png"} width={15} height={15} alt="close"/>
+                    <Image src={"/close.png"}
+                      id="change"
+                      width={15} height={15} alt="close" />
                   </td>
                 </tr>
 
@@ -104,7 +108,9 @@ const WishlistPage = () => {
                     </button>
                   </td>
                   <td className="px-4 py-4 text-right text-sm font-medium">
-                   <Image src={"/close.png"} width={15} height={15} alt="close"/>
+                    <Image src={"/close.png"}
+                      id="change"
+                      width={15} height={15} alt="close" />
                   </td>
                 </tr>
 
@@ -141,15 +147,29 @@ const WishlistPage = () => {
                     </button>
                   </td>
                   <td className="px-4 py-4 text-right text-sm font-medium">
-                   <Image src={"/close.png"} width={15} height={15} alt="close"/>
+                    <Image id="change" src={"/close.png"} width={15} height={15} alt="close" />
                   </td>
                 </tr>
 
                 {/* Row 4 */}
                 <tr className="text-sm sm:text-lg">
-                  <td className="py-8 whitespace-nowrap">
+                  <td className="py-8  whitespace-nowrap">
+                    <div className="flex">
                     <div className="text-sm">
-                      <p className="px-4 sm:px-6">Share:</p>
+                      <p className="px-4 sm:px-6 mt-1">Share:</p>
+                    </div>
+                    <div className="flex space-x-4 px-4 sm:px-1">
+
+                      <FontAwesomeIcon
+                        icon={faFacebook}
+                        size="2"
+                        className="text-green-500 bg-white  w-6"
+                      />
+
+                      <FontAwesomeIcon icon={faTwitter} size="2" className=" bg-white text-black w-6" />
+
+                      <FontAwesomeIcon icon={faLinkedin} size="2" className="text-black w-6" />
+                    </div>
                     </div>
                   </td>
                 </tr>
