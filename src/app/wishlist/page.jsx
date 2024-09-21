@@ -17,28 +17,28 @@ const WishlistPage = () => {
       <BreadCrum />
 
       <div>
-        <main className="container md:w-[80%] mx-auto px-4 md:px-6 lg:px-8 py-8 mt-20">
+        <main className="container lg:w-[80%] mx-auto px-4  lg:px-8 py-8 mt-20">
           <h1 className="text-2xl font-semibold mb-6 text-center">
             My Wishlist
           </h1>
 
           <div
             id="overflow"
-            className="flex justify-end   overflow-auto border-b sm:rounded-lg"
+            className="flex lg:justify-end overflow-auto border-b sm:rounded-lg"
           >
-            <table className="w-[98%] border shadow divide-y border-gray-200  divide-gray-200 table-fixed">
+            <table id="overflow" className="w-[80%] md:w-[98%] border shadow divide-y border-gray-200  divide-gray-200 table-fixed">
               <thead>
                 <tr>
-                  <th className="w-[170px] md:w-1/3 px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="w-[170px] lg:w-1/3 px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     Product
                   </th>
-                  <th className="w-[150px] md:w-1/4 table-cell px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="w-[150px] lg:w-1/4 table-cell px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     Price
                   </th>
-                  <th className="w-[150px] md:w-1/4 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                  <th className="w-[150px] lg:w-1/4 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                     Stock Status
                   </th>
-                  <th className="w-[150px] md:w-1/4 px-4 py-3"></th>
+                  <th className="w-[150px] lg:w-1/4 px-4 py-3"></th>
                   <th className="w-[150px] px-4 py-3"></th>
                 </tr>
               </thead>
@@ -68,7 +68,7 @@ const WishlistPage = () => {
                     </div>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
-                    <span className="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-md bg-green-100 text-green-700">
+                    <span className="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-lg bg-green-100 text-green-700">
                       In Stock
                     </span>
                   </td>
@@ -110,7 +110,7 @@ const WishlistPage = () => {
                     <div className="text-sm text-gray-900">$17.99</div>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
-                    <span className="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-md bg-green-100 text-green-700">
+                    <span className="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-lg bg-green-100 text-green-700">
                       In Stock
                     </span>
                   </td>
@@ -151,7 +151,7 @@ const WishlistPage = () => {
                     <div className="text-sm text-gray-900">$14.99</div>
                   </td>
                   <td className="px-6 py-4 whitespace-nowrap">
-                    <span className="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-md bg-red-100 text-red-700">
+                    <span className="px-2 py-1 inline-flex text-xs leading-5 font-semibold rounded-lg bg-red-100 text-red-700">
                       Out of Stock
                     </span>
                   </td>
