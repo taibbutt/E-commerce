@@ -120,7 +120,7 @@ export default function Home() {
         </main>
       </section>
 
-      <div classNameName="flex justify-center items-center my-10">
+      <div className="flex justify-center items-center my-10">
         <Pagination
           totalPages={21}
           currentPage={3}
